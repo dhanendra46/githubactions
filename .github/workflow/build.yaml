@@ -1,5 +1,5 @@
 name: Node basic build
-on:push
+on: push
 jobs:
   build-node:
     name: Build node application
@@ -13,6 +13,6 @@ jobs:
       - uses: actions/checkout@v2
         name: Checkout code
       - run: npm install
-        name: NPM Install packages
+        name: Install NPM packages
       - run: node app.js
         name: Run application
